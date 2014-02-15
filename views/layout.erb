@@ -10,17 +10,36 @@
 
   <body>
 
-    <div class="row">
-      <div class="small-12 columns">
-        <%= erb :index %>
-      </div>
-    </div>
+  <!--NAVBAR MOFUCKERS -->
+  <div class="off-canvas-wrap">
+    <div class="inner-wrap">
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+      <a class="left-off-canvas-toggle" >Menu</a>
+
+      <!-- Off Canvas Menu -->
+      <aside class="left-off-canvas-menu">
+          <!-- whatever you want goes here -->
+          <ul>
+            <li><a href="#">Item 1</a></li>
+          ...
+          </ul>
+      </aside>
+
+      <!-- main content goes here -->
+      <div class="row">
+        <div class="small-12 columns">
+          <%= erb :index %>
+        </div>
+      </div>
+    <!-- close the off-canvas menu -->
+    <a class="exit-off-canvas"></a>
+    </div>
+  </div>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
   </body>
 </html>
 
