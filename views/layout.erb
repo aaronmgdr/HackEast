@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>EAST Hack</title>
     <link rel="stylesheet" href="/css/foundation.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -14,25 +15,33 @@
   <!--NAVBAR MOFUCKERS -->
   <div class="off-canvas-wrap">
     <div class="inner-wrap">
+      <nav class="tab-bar">
+        <section class="left-small">
+          <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+        </section>
 
-      <a class="left-off-canvas-toggle fa fa-bars" ></a>
-      <!-- Off Canvas Menu -->
+        <section class="middle tab-bar-section">
+          <h1 class="title">Hack EAST</h1>
+        </section>
+      </nav>
+
       <aside class="left-off-canvas-menu">
-          <!-- whatever you want goes here -->
-          <ul>
-            <li><a href="#">Artists</a></li>
-            <li><a href="#">Events</li>
-          </ul>
+        <ul class="off-canvas-list">
+          <li><a href="#">Artists</a></li>
+          <li><a href="#">Events</li>
+        </ul> 
       </aside>
 
       <!-- main content goes here -->
-      <div class="row">
-        <div class="small-12 columns">
-          <%= erb :index %>
-        </div>
-      </div>
+       <section class="main-section">
+          <div class="row">
+          
+            <%= erb :index %>
+     
+          </div>
+       <section class="main-section">
     <!-- close the off-canvas menu -->
-    <a class="exit-off-canvas"></a>
+        <a class="exit-off-canvas"></a>
     </div>
   </div>
   <script src="js/vendor/jquery.js"></script>
